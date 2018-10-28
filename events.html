@@ -33,13 +33,45 @@
                     width: 100%;
                 }
             }
+
             .container, body{
                 background-color: black;
                 text-align: center;
             }
-            #passed{
+            #upcoming{
                 width: 100%;
                 height:auto;
+            }
+            #passed, #upcoming{
+                width: 100%;
+                height:auto;
+            }
+
+            #passed{
+                border:1px solid red;
+            }
+
+            #upcoming{
+                border:1px solid grey;
+            }
+
+            .coll {
+                position: relative;
+                width: auto;
+                height: auto;
+               /* width: 100%;
+                height: 100%;*/
+            }
+            .coll .message {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                display: none;
+                color: #FFF;
+                display: block;
+                background: rgba(25, 0, 0, .6);
             }
         </style>
     </head>
@@ -98,14 +130,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3 coll">
                     <img id="passed" src="images/event_28_09_18.jpg">
+                    <div class="message">
+                        <h2 style="color: maroon;">Passed Event</h2>
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3 coll">
                     <img id="passed" src="images/event_07_07_18.jpg">
+                    <div class="message">
+                        <h2 style="color: maroon;">Passed Event</h2>
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3 coll">
                     <img id="passed" src="images/event_20_04_18.jpg">
+                    <div class="message">
+                        <h2 style="color: maroon;">Passed Event</h2>
+                    </div>
                 </div>
             </div>
         </div>
